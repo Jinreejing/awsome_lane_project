@@ -30,7 +30,7 @@ class UBNeck(nn.Module):
         self.dropout = nn.Dropout2d(p=0.1)
         
         self.convt1 = nn.ConvTranspose2d(in_channels = self.in_channels,
-                               out_channels = self.reduced_depth,
+                                       out_channels = self.reduced_depth,
                                kernel_size = 1,
                                padding = 0,
                                bias = False)
